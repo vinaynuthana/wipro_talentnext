@@ -17,7 +17,6 @@ public class Question15 {
 		            System.out.println("Please enter an integer number");
 		            return;
 		        }
-		        // Using For Loop
 		      for(int i=0;i<num;i++){
 		        for(int j=0;j<=i;j++){
 		          System.out.print("*  ");
