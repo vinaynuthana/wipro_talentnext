@@ -1,5 +1,4 @@
-# Hare and Tortoise Race Simulation 🐢💨
-
+Hare and Tortoise Race Simulation 🐇 vs 🐢
 This project is a simple Java simulation of the classic "Hare and Tortoise" fable using multi-threading.
 
 ## Features
