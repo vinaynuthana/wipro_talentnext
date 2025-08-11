@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms Assignment with HTML5 Attributes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+        }
+        .form-container {
+            width: 50%;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td {
+            padding: 8px;
+        }
+        input, select, textarea {
+            width: 200px;
+            padding: 5px;
+        }
+        hr {
+            border: 1px solid #ccc;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hands-on Assignment 2: Visitor Information -->
+    <div class="form-container">
+        <h2>Visitors Information</h2>
+        <hr>
+        <form>
+            <table>
+                <tr>
+                    <td>Email Address:</td>
+                    <td><input type="email" name="email" placeholder="Enter your email" required></td>
+                </tr>
+                <tr>
+                    <td>Interest:</td>
+                    <td>
+                        <input type="checkbox" name="interest" value="research"> Research
+                        <input type="checkbox" name="interest" value="purchase"> Purchase
+                    </td>
+                </tr>
+                <tr>
+                    <td>Occupation:</td>
+                    <td>
+                        <select name="occupation" required>
+                            <option value="" selected>Select one</option>
+                            <option>Student</option>
+                            <option>Engineer</option>
+                            <option>Teacher</option>
+                            <option>Business</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Want us to send you junk emails?</td>
+                    <td>
+                        <input type="radio" name="junk" value="absolutely" required> Absolutely
+                        <input type="radio" name="junk" value="no"> No way man
+                    </td>
+                </tr>
+                <tr>
+                    <td>Attach Files:</td>
+                    <td><input type="file" name="attachments" multiple></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- Hands-on Assignment 3: Online Registration -->
+    <div class="form-container">
+        <h2>Online Registration Form</h2>
+        <hr>
+        <form>
+            <table>
+                <tr>
+                    <td>Username:</td>
+                    <td><input type="text" name="username" placeholder="Enter username" required></td>
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="password" placeholder="Enter password" required></td>
+                </tr>
+                <tr>
+                    <td>Confirm Password:</td>
+                    <td><input type="password" name="confirm_password" placeholder="Re-enter password" required></td>
+                </tr>
+                <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="name" placeholder="Full name" required></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male" required> Male
+                        <input type="radio" name="gender" value="female"> Female
+                        <input type="radio" name="gender" value="other"> Other
+                    </td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><textarea name="address" rows="3" placeholder="Enter address"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Profession:</td>
+                    <td>
+                        <select name="profession" required>
+                            <option value="" selected>Select one</option>
+                            <option>Student</option>
+                            <option>Teacher</option>
+                            <option>Engineer</option>
+                            <option>Doctor</option>
+                            <option>Business</option>
+                            <option>Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload Documents:</td>
+                    <td><input type="file" name="docs" multiple></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align:center;">
+                        <input type="submit" value="Register">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

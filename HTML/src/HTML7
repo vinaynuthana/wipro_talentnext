@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitors Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            text-align: center;
+        }
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        td {
+            padding: 8px;
+        }
+        hr {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Visitors information</h2>
+    <hr>
+    <form>
+        <table>
+            <!-- Email address -->
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            
+            <!-- User's interest -->
+            <tr>
+                <td>Interest:</td>
+                <td>
+                    <input type="checkbox" name="interest" value="research"> Research
+                    <input type="checkbox" name="interest" value="purchase"> Purchase
+                </td>
+            </tr>
+            
+            <!-- Occupation dropdown -->
+            <tr>
+                <td>Occupation:</td>
+                <td>
+                    <select name="occupation">
+                        <option selected>Select one</option>
+                        <option>Student</option>
+                        <option>Engineer</option>
+                        <option>Teacher</option>
+                        <option>Business</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Junk email radio buttons -->
+            <tr>
+                <td>Want us to send you junk emails?</td>
+                <td>
+                    <input type="radio" name="junk" value="absolutely"> Absolutely
+                    <input type="radio" name="junk" value="no"> No way man
+                </td>
+            </tr>
+            
+            <!-- Submit & Reset buttons -->
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

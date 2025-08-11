@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; /* Center align page content */
+        }
+        table {
+            margin: auto; /* Center table */
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        td {
+            padding: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        input, textarea, select {
+            width: 200px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Online Registration Form</h2>
+    <form>
+        <table>
+            <!-- Username -->
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+
+            <!-- Password -->
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+
+            <!-- Confirm Password -->
+            <tr>
+                <td>Confirm Password:</td>
+                <td><input type="password" name="confirm_password" required></td>
+            </tr>
+
+            <!-- Name -->
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" name="name" required></td>
+            </tr>
+
+            <!-- Gender -->
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                </td>
+            </tr>
+
+            <!-- Address -->
+            <tr>
+                <td>Address:</td>
+                <td><textarea name="address" rows="3"></textarea></td>
+            </tr>
+
+            <!-- Profession -->
+            <tr>
+                <td>Profession:</td>
+                <td>
+                    <select name="profession">
+                        <option selected>Select one</option>
+                        <option>Student</option>
+                        <option>Teacher</option>
+                        <option>Engineer</option>
+                        <option>Doctor</option>
+                        <option>Business</option>
+                        <option>Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Submit and Reset -->
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Register">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

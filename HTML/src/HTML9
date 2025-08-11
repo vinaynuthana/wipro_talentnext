@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Frames Layout</title>
+</head>
+<frameset rows="30%,70%">
+    <!-- Top header with image -->
+    <frame src="header.html" name="headerFrame" scrolling="no" noresize>
+
+    <!-- Bottom split into left menu & right content -->
+    <frameset cols="30%,70%">
+        <frame src="menu.html" name="menuFrame" scrolling="auto" noresize>
+        <frame src="font.html" name="contentFrame">
+    </frameset>
+</frameset>
+</html>
